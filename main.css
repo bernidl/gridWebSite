@@ -177,55 +177,116 @@ section {
     transform: scale(0.99);
     opacity: 1;
 }
-  .main-photo { 
+
+.main-photo { 
     grid-area: main-photo;
     padding: 20px;
     color: white;
     font-size: 2rem;
     background-image: url(img/work-17.png);
- }
- .main-photo h2,.main-photo div{
+}
+.main-photo h2,.main-photo div{
     background-color: black;
     display: inline-block;
     padding: 20px;
     border-radius: 5px;
- }
+}
 
-  .photo-2 { 
+.photo-2 { 
     grid-area: photo-2;
     background-image: url(img/work-01.png);
- }
+}
   
-  .photo-3 { 
+.photo-3 { 
     grid-area: photo-3;
     background-image: url(img/work-03.png);
- }
+}
   
-  .photo-4 { grid-area: photo-4; background-image: url(img/work-04.png); }
+.photo-4 { grid-area: photo-4; background-image: url(img/work-04.png); }
   
-  .photo-5 { grid-area: photo-5; background-image: url(img/work-05.png);}
+.photo-5 { grid-area: photo-5; background-image: url(img/work-05.png);}
   
-  .photo-17 { grid-area: photo-17; background-image: url(img/work-06.png);}
+.photo-17 { grid-area: photo-17; background-image: url(img/work-06.png);}
   
-  .photo-7 { grid-area: photo-7; background-image: url(img/work-07.png);}
+.photo-7 { grid-area: photo-7; background-image: url(img/work-07.png);}
   
-  .photo-6 { grid-area: photo-6; background-image: url(img/work-08.png);}
+.photo-6 { grid-area: photo-6; background-image: url(img/work-08.png);}
   
-  .photo-9 { grid-area: photo-9; background-image: url(img/work-09.png);}
+.photo-9 { grid-area: photo-9; background-image: url(img/work-09.png);}
   
-  .photo-8 { grid-area: photo-8; background-image: url(img/work-10.png);}
+.photo-8 { grid-area: photo-8; background-image: url(img/work-10.png);}
   
-  .photo-10 { grid-area: photo-10; background-image: url(img/work-11.png);}
+.photo-10 { grid-area: photo-10; background-image: url(img/work-11.png);}
   
-  .photo-11 { grid-area: photo-11; background-image: url(img/work-12.png);}
+.photo-11 { grid-area: photo-11; background-image: url(img/work-12.png);}
   
-  .photo-12 { grid-area: photo-12; background-image: url(img/work-13.png);}
+.photo-12 { grid-area: photo-12; background-image: url(img/work-13.png);}
   
-  .photo-13 { grid-area: photo-13; background-image: url(img/work-14.png);}
+.photo-13 { grid-area: photo-13; background-image: url(img/work-14.png);}
   
-  .photo-14 { grid-area: photo-14; background-image: url(img/work-15.png);}
+.photo-14 { grid-area: photo-14; background-image: url(img/work-15.png);}
   
-  .photo-15 { grid-area: photo-15; background-image: url(img/work-16.png);}
+.photo-15 { grid-area: photo-15; background-image: url(img/work-16.png);}
   
-  .photo-16 { grid-area: photo-16; background-image: url(img/work-02.png);}
+.photo-16 { grid-area: photo-16; background-image: url(img/work-02.png);}
+
+
+/* POSTS */
+
+#posts {
+    padding: 10px;
+    background-color: black;
+    display: grid;
+    grid-template: repeat(2, 300px) / repeat(3, 350px);
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+#posts .post{
+    display: grid;
+    align-content: flex-end;
+    border-radius: 5px;
+    background-color: whitesmoke;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+#posts .post a{
+    color: white;
+    text-decoration: none;
+}
+#posts .post .title{
+    background-color: rgb(0, 0,0,0.7);
+    color: white;
+    padding: 8px;
+    font-size: 1.4rem;
+}
+
+#posts .post .title:hover{
+    background-color: white;
+    opacity: 0.8;
+    color: black;
+}
+#posts .post.post-1{
+    background-image: url(img/work-15.png);
+}
+#posts .post.post-2{
+    background-image: url(img/work-02.png);
+}
+#posts .post.post-3{
+    background-image: url(img/work-05.png);
+}
+#posts .post.post-4{
+    background-image: url(img/work-08.png);
+}
+#posts .post.post-5{
+    background-image: url(img/work-10.png);
+}
+#posts .post.post-6{
+    background-image: url(img/work-16.png);
+}
   
