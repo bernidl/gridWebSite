@@ -1,0 +1,88 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+section {
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+#menu {
+    background-color: rgba(195,35,88);
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 200px);
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: 
+    "about about projects projects"
+    "about about posts contact";
+}
+#menu .tile{
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+#menu .tile a{
+    text-decoration: none;
+}
+#menu .tile .front {
+    color: white;
+    background-color: black;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-size: cover;
+    background-position: center;
+
+    transition: all 0.4s ease;
+}
+#menu .tile .back {
+    background-color: #222;
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+#menu .tile:hover .front{
+    margin-top: -100%;
+}
+#menu .projects-tile:hover .front{
+    margin-top: -50%;
+}
+#menu .about-tile .front{
+    background-image: url(img/profile.png);
+}
+#menu .projects-tile .front{
+    background-image: url(img/work-01.png);
+}
+#menu .posts-tile .front {
+    background-image: url(img/work-02.png);
+}
+#menu .contact-tile .front {
+    background-image: url(img/work-03.png);
+}
+.about-tile {
+    grid-area: about;
+}
+.projects-tile {
+    grid-area: projects;
+}
+.posts-tile {
+    grid-area: posts;
+}
+.contact-tile {
+    grid-area: contact;
+}
